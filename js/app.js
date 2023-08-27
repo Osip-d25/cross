@@ -6604,14 +6604,14 @@
     gsapWithCSS.registerPlugin(ScrollTrigger_ScrollTrigger);
     const animeHero = gsapWithCSS.timeline();
     animeHero.set(".menu-list .menu-list__item", {
-        xPercent: -100,
-        opacity: 0
+        opacity: 0,
+        xPercent: -100
     }).set(".hero__text", {
-        xPercent: -100,
-        opacity: 0
+        opacity: 0,
+        xPercent: -100
     }).set(".hero__box-btns .btn", {
-        yPercent: 100,
-        opacity: 0
+        opacity: 0,
+        yPercent: 100
     }).to(".menu-list .menu-list__item", {
         xPercent: 0,
         opacity: 1,
@@ -6636,7 +6636,6 @@
                     trigger: offer,
                     start: "300 center",
                     end: "+=0",
-                    markers: true,
                     scrub: 1
                 },
                 opacity: 0,
